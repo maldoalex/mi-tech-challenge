@@ -22,9 +22,11 @@ a {
   text-decoration: none;
 }
 
-section {
+/* section {
   padding: 5rem 0;
-}
+} */
+
+/* HOME PAGE ***********/
 
 /* NAVBAR */
 .navbar {
@@ -32,17 +34,29 @@ section {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 0 10rem;
+  padding: 0 7rem;
+  padding-top: 4rem;
+  margin-bottom: 3rem;
+  /* position: fixed;
+  top: 0;
+  left: 0;
+  height: 10rem;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 10; */
 }
 
-.logo {
-  width: 20rem;
+.nav-logo {
+  width: 24rem;
 }
 
-
-.links {
-  align-self: center;
-  font-weight: bolder;
+.nav-links {
+  /* align-self: center;
+  font-weight: bolder; */
+  /* text-align: center;
+display: inline-block; */
+  font-size: 1.7rem;
+  font-weight: 600;
 }
 
 /* CARD SECTION */
@@ -54,41 +68,100 @@ section {
 }
 
 .card {
-  width: 32rem;
+  width: 40rem;
+  height: 40rem;
   background-color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 2rem 0;
+  margin-bottom: .8rem;
   border-radius: .5rem;
+  padding: 0 4rem;
 }
 
-.card .card-img {
-  width: 100%;
+.img-container {
+  height: 30%;
+  display: flex;
+  align-items: center;
+  padding-top: 1.3rem;
 }
+
+/* .card .card-img {
+  width: 100%;
+} */
 
 .card-title {
   font-size: 3.5rem;
   color: black;
   margin: 1.5rem 0;
+  align-self: normal;
 }
 
 .card-content {
   font-size: 1.3rem;
   color: #858585;
+  line-height: 2.5rem;
 }
 
-.card .btn {
+.card-btn {
   background-color: #DEBF79;
   color: white;
   padding: 1rem 2.5rem;
+  font-size: 1.5rem;
+  margin-top: 2.5rem;
+}
+
+.names-container {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  /* padding: 4rem; */
+  padding-top: 3rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  padding-bottom: 3rem;
+}
+
+.names-container h1 {
+  font-size: 4.5rem;
+  color: white;
+  /* margin: 1.5rem 0; */
+  align-self: normal;
+  font-weight: 600;
+  margin-bottom: 2.5rem;
+}
+
+.names-container h1::after {
+  content: '';
+  display: block;
+  height: .4rem;
+  width: 20rem;
+  background: #DEBF79;
+}
+
+.names-container p {
+  color: white;
+  font-size: 1.5rem;
+  line-height: 1.7;
+  word-spacing: 1.1rem;
+  text-align: justify;
+  word-break: keep-all;
+}
+
+.names-container p a {
+  color: #DEBF79;
 }
 
 
-
-/* LAPTOP LAYOUT */
+/* DESKTOP LAYOUT */
 @media screen and (min-width: 768px) {
+
+  .nav-logo {
+    width: 37rem;
+  }
+
   .card-container {
     flex-direction: row;
     flex-wrap: wrap;
@@ -97,145 +170,292 @@ section {
   }
 
   .card {
-    margin: 2rem;
+    margin: 1.3rem;
+  }
+
+  .names-container p {
+    color: white;
+    font-size: 1.5rem;
+    line-height: 1.7;
+    word-spacing: .2rem;
+    text-align: justify;
+    word-break: keep-all;
   }
 }
 
 
-
-
-/* CONTACT PAGE */
-
-.container {
+/* CONTACT PAGE ********************/
+.sections-container {
   min-height: 100vh;
   display: flex;
 }
 
-/* RIGHT / TOP SECTION */
+/* HEADING ONE SECTION */
 .section1 {
   width: 50vw;
   background-color: #222222;
-  padding: 4rem;
+  padding: 5rem 9rem;
 }
 
-.logo {
+.section1-logo {
   font-size: 5rem;
-  margin-bottom: 10rem;
   width: 100%;
 }
 
 .heading1 {
-  padding-top: 10rem;
+  padding-top: 20rem;
 }
 
 .heading1 h1 {
-  padding-bottom: 3rem;
-  font-size: 4rem;
+  padding-bottom: 2.5rem;
+  font-size: 4.8rem;
   color: white;
+  letter-spacing: .1rem;
 }
 
 .heading1 h1::after {
   content: '';
   display: block;
   height: .4rem;
-  width: 17.5rem;
+  width: 21.5rem;
   background: #DEBF79;
 }
 
-/* .heading1 span {
-  text-decoration: underline #DEBF79;
-} */
-
 .heading1 p {
-  padding-bottom: 1rem;
-  font-size: 1.4rem;
+  padding-bottom: 1.5rem;
+  font-size: 1.5rem;
   color: white;
-  line-height: 2rem;
-  letter-spacing: .1rem;
-  font-weight: 300;
+  line-height: 1.8;
+  text-align: justify;
 }
 
-/* LEFT / BOTTOM SECTION */
+/* FORM SECTION */
 .section2 {
   width: 50vw;
   background-color: white;
   padding: 4rem;
 }
 
-.links {
-  font-size: 2rem;
-  margin-bottom: 10rem;
+.form-links {
+  font-size: 1.7rem;
   width: 100%;
+  padding-right: 3rem;
+  padding-top: 3rem;
+  font-weight: bold;
+  letter-spacing: .1rem;
 }
 
-.links a {
+.form-links a {
   float: right;
-  /* margin-right: 2rem; */
 }
 
 .form-container {
-  padding-top: 10rem;
   width: 100%;
+  padding-top: 20rem;
+  padding-left: 3rem;
 }
 
 .form-container h1 {
-  /* padding-bottom: 3rem; */
-  margin: 0 2rem;
-
-  font-size: 3rem;
+  font-size: 3.5rem;
   color: black;
+  padding-bottom: 2rem;
+  padding-left: 1rem;
+  letter-spacing: .1rem;
 }
 
-.form-container form .form-row {
+.form-row {
   display: flex;
-  margin: 1.5rem 0;
-  height: 4rem;
+  height: 4.3rem;
+  margin-bottom: 2rem;
 }
 
-form .form-row .input-data {
+.input-data {
   width: 100%;
   height: 100%;
   margin: 0 1rem;
-  position: relative;
-  /* background-color: #f5f5f5;
-  border: #f5f5f5;
-  outline: none; */
+  display: flex;
+  justify-content: center;
 }
 
-.form-container form .textarea {
-  margin: 1.5rem 0;
-}
-
-form .textarea .input-data {
-  /* width: 100%; */
-  height: 100%;
-  margin: 0 1rem;
-  /* position: relative; */
-  /* background-color: #f5f5f5;
-  border: #f5f5f5;
-  outline: none; */
-}
-
-.input-data input,
-.textarea textarea {
+input,
+textarea {
   display: block;
   height: 100%;
   width: 100%;
   border: none;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   background-color: #f5f5f5;
   padding-left: 2rem;
+  letter-spacing: .1rem;
 }
 
-.textarea textarea {
-  font-family: 'Poppins';
+.textarea {
+  margin-bottom: 2rem;
+}
+
+textarea {
   color: #858585;
-  resize: none;
+  height: 14rem;
   padding-top: 1.2rem;
+  margin-right: 2rem;
+  resize: none;
 }
 
-/* .form-container .form-row input {
-  background-color: #f5f5f5;
-  border: #f5f5f5;
-  outline: none;
+/* .textarea {
+  margin: 1.5rem 0;
 } */
+
+.form-btn {
+  background-color: #DEBF79;
+  color: white;
+  padding: 1rem 4rem;
+  border: none;
+  letter-spacing: .1rem;
+}
+
+/* MOBILE LAYOUT */
+@media screen and (max-width: 768px) {
+  .sections-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* HEADING ONE SECTION */
+  .section1 {
+    background-color: #222222;
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 6rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    position: relative;
+  }
+
+  .section1-logo {
+    font-size: 1rem;
+    width: 24rem;
+    margin-bottom: 3rem;
+    margin-top: .6rem;
+  }
+
+  .section1 img {
+    width: 100%;
+  }
+
+  .heading1 {
+    padding-top: 3rem;
+  }
+
+  .heading1 h1 {
+    padding-bottom: 2.5rem;
+    font-size: 4.8rem;
+    color: white;
+    letter-spacing: .1rem;
+  }
+
+  .heading1 h1::after {
+    content: '';
+    display: block;
+    height: .4rem;
+    width: 21.5rem;
+    background: #DEBF79;
+  }
+
+  .heading1 p {
+    padding-bottom: 1.5rem;
+    font-size: 1.5rem;
+    color: white;
+    line-height: 1.8;
+    text-align: justify;
+  }
+
+  /* FORM SECTION */
+  .section2 {
+    background-color: white;
+    padding: 0 4rem;
+    width: 100%;
+  }
+
+  /* .form-links {
+    font-size: 1.7rem;
+    width: 100%;
+    font-weight: bold;
+    letter-spacing: .1rem;
+    padding-right: 3rem;
+    padding-top: 3rem;
+  } */
+
+  .form-links a {
+    font-size: 1.7rem;
+    width: 100%;
+    font-weight: bold;
+    letter-spacing: .1rem;
+    position: absolute;
+    top: 36px;
+    right: -400px;
+  }
+
+  .form-container {
+    width: 100%;
+    padding-top: 1.5rem;
+    padding-left: 3rem;
+  }
+
+  .form-container h1 {
+    font-size: 3.6rem;
+    color: black;
+    padding-bottom: 3.2rem;
+    padding-left: 1rem;
+    letter-spacing: .1rem;
+  }
+
+  .form-row {
+    display: flex;
+    height: 4.3rem;
+    margin-bottom: 2rem;
+  }
+
+  .input-data {
+    width: 100%;
+    height: 100%;
+    margin: 0 1rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  input,
+  textarea {
+    display: block;
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 1.3rem;
+    background-color: #f5f5f5;
+    padding-left: 2rem;
+    letter-spacing: .1rem;
+  }
+
+  .textarea {
+    margin-bottom: 2rem;
+  }
+
+  textarea {
+    color: #858585;
+    height: 14rem;
+    padding-top: 1.2rem;
+    margin-right: 2rem;
+    resize: none;
+  }
+
+  /* .textarea {
+  margin: 1.5rem 0;
+} */
+
+  .form-btn {
+    background-color: #DEBF79;
+    color: white;
+    padding: 1rem 4rem;
+    border: none;
+    letter-spacing: .1rem;
+  }
+}
