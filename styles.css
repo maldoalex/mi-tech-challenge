@@ -4,6 +4,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+
 }
 
 html {
@@ -11,7 +13,6 @@ html {
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
   background-color: #222222;
   color: #858585;
 }
@@ -24,6 +25,7 @@ a {
 section {
   padding: 5rem 0;
 }
+
 /* NAVBAR */
 .navbar {
   display: flex;
@@ -82,3 +84,158 @@ section {
   color: white;
   padding: 1rem 2.5rem;
 }
+
+
+
+/* LAPTOP LAYOUT */
+@media screen and (min-width: 768px) {
+  .card-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card {
+    margin: 2rem;
+  }
+}
+
+
+
+
+/* CONTACT PAGE */
+
+.container {
+  min-height: 100vh;
+  display: flex;
+}
+
+/* RIGHT / TOP SECTION */
+.section1 {
+  width: 50vw;
+  background-color: #222222;
+  padding: 4rem;
+}
+
+.logo {
+  font-size: 5rem;
+  margin-bottom: 10rem;
+  width: 100%;
+}
+
+.heading1 {
+  padding-top: 10rem;
+}
+
+.heading1 h1 {
+  padding-bottom: 3rem;
+  font-size: 4rem;
+  color: white;
+}
+
+.heading1 h1::after {
+  content: '';
+  display: block;
+  height: .4rem;
+  width: 17.5rem;
+  background: #DEBF79;
+}
+
+/* .heading1 span {
+  text-decoration: underline #DEBF79;
+} */
+
+.heading1 p {
+  padding-bottom: 1rem;
+  font-size: 1.4rem;
+  color: white;
+  line-height: 2rem;
+  letter-spacing: .1rem;
+  font-weight: 300;
+}
+
+/* LEFT / BOTTOM SECTION */
+.section2 {
+  width: 50vw;
+  background-color: white;
+  padding: 4rem;
+}
+
+.links {
+  font-size: 2rem;
+  margin-bottom: 10rem;
+  width: 100%;
+}
+
+.links a {
+  float: right;
+  /* margin-right: 2rem; */
+}
+
+.form-container {
+  padding-top: 10rem;
+  width: 100%;
+}
+
+.form-container h1 {
+  /* padding-bottom: 3rem; */
+  margin: 0 2rem;
+
+  font-size: 3rem;
+  color: black;
+}
+
+.form-container form .form-row {
+  display: flex;
+  margin: 1.5rem 0;
+  height: 4rem;
+}
+
+form .form-row .input-data {
+  width: 100%;
+  height: 100%;
+  margin: 0 1rem;
+  position: relative;
+  /* background-color: #f5f5f5;
+  border: #f5f5f5;
+  outline: none; */
+}
+
+.form-container form .textarea {
+  margin: 1.5rem 0;
+}
+
+form .textarea .input-data {
+  /* width: 100%; */
+  height: 100%;
+  margin: 0 1rem;
+  /* position: relative; */
+  /* background-color: #f5f5f5;
+  border: #f5f5f5;
+  outline: none; */
+}
+
+.input-data input,
+.textarea textarea {
+  display: block;
+  height: 100%;
+  width: 100%;
+  border: none;
+  font-size: 1.5rem;
+  background-color: #f5f5f5;
+  padding-left: 2rem;
+}
+
+.textarea textarea {
+  font-family: 'Poppins';
+  color: #858585;
+  resize: none;
+  padding-top: 1.2rem;
+}
+
+/* .form-container .form-row input {
+  background-color: #f5f5f5;
+  border: #f5f5f5;
+  outline: none;
+} */
