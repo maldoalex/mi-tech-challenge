@@ -22,11 +22,7 @@ a {
   text-decoration: none;
 }
 
-/* section {
-  padding: 5rem 0;
-} */
-
-/* HOME PAGE ***********/
+/* HOME PAGE ********************/
 
 /* NAVBAR */
 .navbar {
@@ -51,10 +47,6 @@ a {
 }
 
 .nav-links {
-  /* align-self: center;
-  font-weight: bolder; */
-  /* text-align: center;
-display: inline-block; */
   font-size: 1.7rem;
   font-weight: 600;
 }
@@ -87,10 +79,6 @@ display: inline-block; */
   padding-top: 1.3rem;
 }
 
-/* .card .card-img {
-  width: 100%;
-} */
-
 .card-title {
   font-size: 3.5rem;
   color: black;
@@ -117,17 +105,12 @@ display: inline-block; */
   align-items: center;
   align-content: center;
   flex-direction: column;
-  /* padding: 4rem; */
-  padding-top: 3rem;
-  padding-left: 4rem;
-  padding-right: 4rem;
-  padding-bottom: 3rem;
+  padding: 3rem 4rem;
 }
 
 .names-container h1 {
   font-size: 4.5rem;
   color: white;
-  /* margin: 1.5rem 0; */
   align-self: normal;
   font-weight: 600;
   margin-bottom: 2.5rem;
@@ -152,6 +135,12 @@ display: inline-block; */
 
 .names-container p a {
   color: #DEBF79;
+}
+
+.names-container .name-list {
+  color: white;
+  font-size: 1.5rem;
+  line-height: 1.7;
 }
 
 
@@ -190,30 +179,30 @@ display: inline-block; */
   display: flex;
 }
 
-/* HEADING ONE SECTION */
-.section1 {
+/* SECTION-BLACK */
+.section-black {
   width: 50vw;
   background-color: #222222;
   padding: 5rem 9rem;
 }
 
-.section1-logo {
+.section-black-logo {
   font-size: 5rem;
   width: 100%;
 }
 
-.heading1 {
+.heading-one {
   padding-top: 20rem;
 }
 
-.heading1 h1 {
+.heading-one h1 {
   padding-bottom: 2.5rem;
   font-size: 4.8rem;
   color: white;
   letter-spacing: .1rem;
 }
 
-.heading1 h1::after {
+.heading-one h1::after {
   content: '';
   display: block;
   height: .4rem;
@@ -221,7 +210,7 @@ display: inline-block; */
   background: #DEBF79;
 }
 
-.heading1 p {
+.heading-one p {
   padding-bottom: 1.5rem;
   font-size: 1.5rem;
   color: white;
@@ -229,8 +218,8 @@ display: inline-block; */
   text-align: justify;
 }
 
-/* FORM SECTION */
-.section2 {
+/* SECTION-WHITE */
+.section-white {
   width: 50vw;
   background-color: white;
   padding: 4rem;
@@ -269,7 +258,7 @@ display: inline-block; */
   margin-bottom: 2rem;
 }
 
-.input-data {
+.input-box {
   width: 100%;
   height: 100%;
   margin: 0 1rem;
@@ -301,10 +290,6 @@ textarea {
   resize: none;
 }
 
-/* .textarea {
-  margin: 1.5rem 0;
-} */
-
 .form-btn {
   background-color: #DEBF79;
   color: white;
@@ -320,8 +305,8 @@ textarea {
     flex-direction: column;
   }
 
-  /* HEADING ONE SECTION */
-  .section1 {
+  /* SECTION-BLACK */
+  .section-black {
     background-color: #222222;
     width: 100%;
     padding-top: 2rem;
@@ -331,29 +316,29 @@ textarea {
     position: relative;
   }
 
-  .section1-logo {
+  .section-black-logo {
     font-size: 1rem;
     width: 24rem;
     margin-bottom: 3rem;
     margin-top: .6rem;
   }
 
-  .section1 img {
+  .section-black img {
     width: 100%;
   }
 
-  .heading1 {
+  .heading-one {
     padding-top: 3rem;
   }
 
-  .heading1 h1 {
+  .heading-one h1 {
     padding-bottom: 2.5rem;
     font-size: 4.8rem;
     color: white;
     letter-spacing: .1rem;
   }
 
-  .heading1 h1::after {
+  .heading-one h1::after {
     content: '';
     display: block;
     height: .4rem;
@@ -361,7 +346,7 @@ textarea {
     background: #DEBF79;
   }
 
-  .heading1 p {
+  .heading-one p {
     padding-bottom: 1.5rem;
     font-size: 1.5rem;
     color: white;
@@ -369,21 +354,12 @@ textarea {
     text-align: justify;
   }
 
-  /* FORM SECTION */
-  .section2 {
+  /* SECTION-WHITE */
+  .section-white {
     background-color: white;
     padding: 0 4rem;
     width: 100%;
   }
-
-  /* .form-links {
-    font-size: 1.7rem;
-    width: 100%;
-    font-weight: bold;
-    letter-spacing: .1rem;
-    padding-right: 3rem;
-    padding-top: 3rem;
-  } */
 
   .form-links a {
     font-size: 1.7rem;
@@ -417,7 +393,7 @@ textarea {
     margin-bottom: 0rem;
   }
 
-  .input-data {
+  .input-box {
     width: 100%;
     height: 100%;
     margin: 1rem 1rem;
@@ -448,10 +424,6 @@ textarea {
     margin-right: 0rem;
     resize: none;
   }
-
-  /* .textarea {
-  margin: 1.5rem 0;
-} */
 
   .form-btn {
     background-color: #DEBF79;
